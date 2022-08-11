@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery__img {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 30px;
+}
+
+.gallery__img--red, .gallery__img--blue, .gallery__img--green {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.gallery__img--red {
+  background: red;
+}
+
+.gallery__img--blue {
+  background: blue;
+}
+
+.gallery__img--green {
+  background: green;
+}
+
+.gallery__pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.gallery__pagination--red, .gallery__pagination--blue, .gallery__pagination--green {
+  width: 40px;
+  height: 40px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+
+.gallery__pagination--red {
+  background: red;
+}
+
+.gallery__pagination--blue {
+  background: blue;
+}
+
+.gallery__pagination--green {
+  background: green;
+}
+
+.img-active {
+  display: block;
+}
+
+.btn-active {
+  position: relative;
+}
+
+.btn-active::before {
+  content: "";
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  border-radius: 200px;
+  border: 2px solid #333333;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+/*# sourceMappingURL=app.css.map */
